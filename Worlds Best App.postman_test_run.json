@@ -1,0 +1,174 @@
+{
+	"id": "e3ae12af-695e-4dc4-97e3-b812f0735f4e",
+	"name": "Worlds Best App",
+	"allTests": [],
+	"timestamp": "2018-11-19T07:30:27.754Z",
+	"collection_id": "7371e106-e3c0-428e-b2ca-c7bc9a016d99",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "2c2fc384-2418-47e1-bcf1-3aa7994b58f3",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "7371e106-e3c0-428e-b2ca-c7bc9a016d99",
+		"name": "Worlds Best App",
+		"description": "API tests for the worlds best app",
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"c487f2d1-9043-4c69-b94c-5619d2cdb284",
+			"46304617-2772-4d58-9599-2e6733f35768"
+		],
+		"folders_order": [],
+		"owner": "5911208",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Login Success",
+			"id": "c487f2d1-9043-4c69-b94c-5619d2cdb284",
+			"url": "https://sprinkle-burn.glitch.me/api/login",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "the username is returned",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"the username is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"748"
+			],
+			"allTests": [
+				{
+					"the username is returned": true
+				}
+			],
+			"time": "748",
+			"totalRequestTime": "748",
+			"iterationResults": {}
+		},
+		{
+			"name": "Login Error",
+			"id": "46304617-2772-4d58-9599-2e6733f35768",
+			"url": "https://sprinkle-burn.glitch.me/api/login",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "return an array of errors",
+				"status": "pass",
+				"return an first error title is 'Credentials are incorrect' ": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"return an array of errors": {
+					"pass": 1,
+					"fail": 0
+				},
+				"return an first error title is 'Credentials are incorrect' ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"179"
+			],
+			"allTests": [
+				{
+					"return an array of errors": true,
+					"return an first error title is 'Credentials are incorrect' ": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "179",
+			"totalRequestTime": "179",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 0,
+	"totalTime": 927,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Login Success",
+			"id": "c487f2d1-9043-4c69-b94c-5619d2cdb284",
+			"url": "https://sprinkle-burn.glitch.me/api/login",
+			"time": "2018-11-19T07:30:27.754Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"the username is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Login Error",
+			"id": "46304617-2772-4d58-9599-2e6733f35768",
+			"url": "https://sprinkle-burn.glitch.me/api/login",
+			"time": "2018-11-19T07:30:27.754Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"return an array of errors": {
+					"pass": 1,
+					"fail": 0
+				},
+				"return an first error title is 'Credentials are incorrect' ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
